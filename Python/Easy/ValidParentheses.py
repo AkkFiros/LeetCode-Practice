@@ -32,6 +32,7 @@ class Solution(object):
         # LIFO stack to track parentheses and their order
         stack = []
 
+        # map close parentheses to open parentheses
         maps = { ")" : "(",
                  "]" : "[",
                  "}" : "{" }
@@ -49,15 +50,3 @@ class Solution(object):
                 else:
                     return False    
         return not stack
-    
-s1 = "()"
-s2 = "()[]{}"
-s3 = "(]"
-s4 = "([])"
-s5 = "([)]"
-
-print(Solution.isValid(1, s1))
-print(Solution.isValid(1, s2))
-print(Solution.isValid(1, s3))
-print(Solution.isValid(1, s4))
-print(Solution.isValid(1, s5))
