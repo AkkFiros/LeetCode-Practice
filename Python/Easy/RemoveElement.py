@@ -29,7 +29,7 @@ class Solution(object):
         k = 0
 
         # 2-pointer menthod
-        for i in range(len(nums) - 1):
+        for i in range(len(nums)):
             if nums[i] != val:
                 nums[k] = nums[i]
                 k += 1
