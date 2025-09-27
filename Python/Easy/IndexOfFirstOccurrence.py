@@ -37,7 +37,7 @@ class Solution(object):
         
 """
 Notes:
-- uising in() and index() functions is quite efficient as they are implemented in C
+- using in() and index() functions is quite efficient as they are implemented in C
 - sliding window approach and KMP approach also possible
 - in()/index() solution is O(n + m) on average, O(n * m) in worst case
 - sliding window is O(n * m)
