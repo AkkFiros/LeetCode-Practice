@@ -22,13 +22,8 @@ class Solution(object):
         """
         
         list_s = s.split(" ")
-        print(list_s)
+
         while list_s and list_s[-1] == "":
             list_s.pop(-1)
 
-        print(list_s)
-
         return len(list_s[-1])
-    
-s = "   fly me   to   the moon  "
-print(Solution().lengthOfLastWord(s))
