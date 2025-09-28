@@ -56,5 +56,3 @@ Notes:
         return r
 - Newton's method also has O(log(n)) time complexity
 """
-
-print(Solution.mySqrt(1, 8))
