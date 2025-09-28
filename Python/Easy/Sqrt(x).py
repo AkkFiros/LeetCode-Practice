@@ -21,6 +21,10 @@ class Solution(object):
             Returns:
                     int: a non-negative integer
         """
+        # edge case: sqrt(0) = 0, sqrt(1) = 1
+        if x < 2:
+            return x
+        
         low = 0
         high = x
 
@@ -31,11 +35,11 @@ class Solution(object):
             if mid * mid == x:
                 return mid
             elif mid * mid < x:
-                high == mid + 1
+                low = mid + 1
             else:
-                low == mid - 1
+                high = mid - 1
 
-        return low
+        return high
     
 
 """
@@ -52,3 +56,5 @@ Notes:
         return r
 - Newton's method also has O(log(n)) time complexity
 """
+
+print(Solution.mySqrt(1, 8))
